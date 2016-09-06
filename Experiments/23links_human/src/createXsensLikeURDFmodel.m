@@ -71,8 +71,8 @@ urdfModelTemplate = strrep(urdfModelTemplate,'NECKINERTIAIYY',num2str(subjectPar
 urdfModelTemplate = strrep(urdfModelTemplate,'NECKINERTIAIZZ',num2str(subjectParams.neckIzz));
 urdfModelTemplate = strrep(urdfModelTemplate,'jC1Head_ORIGIN',num2str(subjectParams.jC1Head'));
 %% HEAD (solid: sphere)
-urdfModelTemplate = strrep(urdfModelTemplate,'HEAD_BOX_ORIGIN',num2str(subjectParams.neckBoxOrigin));
-urdfModelTemplate = strrep(urdfModelTemplate,'HEAD_COM_ORIGIN',num2str(subjectParams.neckBoxOrigin));
+urdfModelTemplate = strrep(urdfModelTemplate,'HEAD_BOX_ORIGIN',num2str(subjectParams.headBoxOrigin));
+urdfModelTemplate = strrep(urdfModelTemplate,'HEAD_COM_ORIGIN',num2str(subjectParams.headBoxOrigin));
 urdfModelTemplate = strrep(urdfModelTemplate,'HEADRADIUS',num2str(0.5 * subjectParams.head_z));
 urdfModelTemplate = strrep(urdfModelTemplate,'HEADMASS',num2str(subjectParams.headMass));
 urdfModelTemplate = strrep(urdfModelTemplate,'HEADINERTIAIXX',num2str(subjectParams.headIxx));
